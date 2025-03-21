@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services - St Andrews Hospital</title>
+  <meta name="description" content="St Andrews Hospital offers a wide range of medical services including cardiology, neurology, pediatrics, emergency care, and more. Learn about our specialized healthcare services.">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="src/styles.css">
+
+  <style>
+    /* Additional Styles for Services Page */
+    .service-section {
+      padding: 80px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .service-section:last-child {
+      border-bottom: none;
+    }
+
+    .service-content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .service-img {
+      flex: 1;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+
+    .service-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .service-text {
+      flex: 1;
+    }
+
+    .service-text h2 {
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .service-list {
+      margin-top: 20px;
+    }
+
+    .service-item {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .service-item i {
+      color: var(--primary-color);
+      margin-right: 10px;
+      font-size: 1.2rem;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .service-content {
+        flex-direction: column;
+      }
+
+      .service-content.reverse {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <h1><i class="fas fa-hospital"></i> ST ANDREWS</h1>
+          </a>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <a href="contact.html#appointment" class="btn">Make an Appointment</a>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section page-header" style="background-image: url('https://media.istockphoto.com/id/1773074070/photo/nurse-organizing-medical-supplies-at-the-hospital-laboratory.jpg?s=612x612&w=gi&k=20&c=79S4ZzMFX23lyzjVmoFT7IaOaFAWnOvibMxQhFM7Uo0=');">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Our Services</h1>
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Services</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 class="section-title">Comprehensive Healthcare Services</h2>
+        <p>At St Andrews Hospital, we offer a wide range of specialized medical services to meet the diverse healthcare needs of our patients. Our team of experienced healthcare professionals utilizes advanced technology and evidence-based practices to deliver exceptional care.</p>
+        <p>Explore our services below to learn more about the specialized care we provide. If you have any questions or would like to schedule an appointment, please <a href="contact.html">contact us</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cardiology Section -->
+  <section id="cardiology" class="service-section">
+    <div class="container">
+      <div class="service-content">
+        <div class="service-img">
+          <img src="https://media.istockphoto.com/id/1207268958/photo/cardiologist-with-digital-tablet-analyzing-heart-on-digital-display-in-clinic.jpg?s=612x612&w=0&k=20&c=9VsUK1QFw-GDSw2hj5RuOVDIwH4fOOQGwT4Pz0H-kVQ=" alt="Cardiology Department">
+        </div>
+        <div class="service-text">
+          <h2>Cardiology</h2>
+          <p>Our Cardiology Department provides comprehensive care for patients with heart and vascular conditions. Our team of experienced cardiologists utilizes state-of-the-art diagnostic and treatment technologies to deliver exceptional care.</p>
+          <div class="service-list">
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Non-invasive cardiac testing (ECG, Echocardiography, Stress Testing)</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Cardiac catheterization and interventional procedures</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Heart rhythm disorders management</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Heart failure management</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Cardiac rehabilitation programs</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Preventive cardiology and risk assessment</span>
+            </div>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="contact.html#appointment" class="btn">Book an Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Neurology Section -->
+  <section id="neurology" class="service-section">
+    <div class="container">
+      <div class="service-content reverse" style="flex-direction: row-reverse;">
+        <div class="service-img">
+          <img src="https://media.istockphoto.com/id/1319326764/photo/robot-artificial-brain-technology-medical-3d-illustration.jpg?s=612x612&w=0&k=20&c=Q4w9lp_nQxeO3DVjS1sGDRz4G0Xq6Zk1OLh4XcwW0NE=" alt="Neurology Department">
+        </div>
+        <div class="service-text">
+          <h2>Neurology</h2>
+          <p>Our Neurology Department specializes in the diagnosis and treatment of disorders affecting the nervous system, including the brain, spinal cord, and peripheral nerves. Our neurologists are committed to providing comprehensive care for patients with neurological conditions.</p>
+          <div class="service-list">
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Neurological examinations and consultations</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Advanced neuroimaging (MRI, CT scan, PET)</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Epilepsy and seizure disorders management</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Movement disorders (Parkinson's disease, tremor)</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Stroke prevention and treatment</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Headache and migraine management</span>
+            </div>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="contact.html#appointment" class="btn">Book an Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Surgery Section -->
+  <section id="surgery" class="service-section">
+    <div class="container">
+      <div class="service-content">
+        <div class="service-img">
+          <img src="https://media.istockphoto.com/id/592647720/photo/vigilantly-monitoring-his-patients-vitals.jpg?s=612x612&w=0&k=20&c=cKQ6XPw8X98Z-9XQDR0DqnpTdvFsiHiXzYptGbKdD40=" alt="Surgery Department">
+        </div>
+        <div class="service-text">
+          <h2>Surgery</h2>
+          <p>Our Surgery Department offers a wide range of surgical procedures performed by highly skilled surgeons using advanced techniques and technologies. We are committed to providing safe, effective surgical care with optimal outcomes.</p>
+          <div class="service-list">
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>General surgery</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Minimally invasive and laparoscopic surgery</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Orthopedic surgery</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Neurosurgery</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Cardiovascular surgery</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Pre and post-operative care</span>
+            </div>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="contact.html#appointment" class="btn">Book an Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pediatrics Section -->
+  <section id="pediatrics" class="service-section">
+    <div class="container">
+      <div class="service-content reverse" style="flex-direction: row-reverse;">
+        <div class="service-img">
+          <img src="https://media.istockphoto.com/id/1496720417/photo/high-five-for-being-such-a-brave-little-boy.jpg?s=612x612&w=0&k=20&c=jrhbbPCEEN5Z3nSmTdu6fBC84v0kFuuJ8L4l2reghn4=" alt="Pediatrics Department">
+        </div>
+        <div class="service-text">
+          <h2>Pediatrics</h2>
+          <p>Our Pediatrics Department provides specialized healthcare for infants, children, and adolescents in a child-friendly environment. Our pediatricians are dedicated to the health and well-being of young patients, offering comprehensive care from routine check-ups to complex medical conditions.</p>
+          <div class="service-list">
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Well-child visits and immunizations</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Diagnosis and treatment of childhood illnesses</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Pediatric specialty care</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Developmental assessments</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Adolescent medicine</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Child-friendly facilities and care approach</span>
+            </div>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="contact.html#appointment" class="btn">Book an Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diagnostics Section -->
+  <section id="diagnostics" class="service-section">
+    <div class="container">
+      <div class="service-content">
+        <div class="service-img">
+          <img src="https://media.istockphoto.com/id/1302633585/photo/doctors-are-analyzing-brain-scans-using-a-computer.jpg?s=612x612&w=0&k=20&c=hxhaDLKMKsxK9TtDcLJRRRERAWxkuTSBIL3YowuXows=" alt="Diagnostics Department">
+        </div>
+        <div class="service-text">
+          <h2>Diagnostics</h2>
+          <p>Our Diagnostics Department offers a comprehensive range of diagnostic services utilizing advanced imaging and laboratory technologies. Our team of experienced radiologists, technologists, and laboratory professionals is committed to providing accurate and timely diagnostic information.</p>
+          <div class="service-list">
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Advanced imaging (MRI, CT, Ultrasound, X-ray)</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Laboratory testing</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Nuclear medicine</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Interventional radiology</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Mammography and breast imaging</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Cardiac and vascular imaging</span>
+            </div>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="contact.html#appointment" class="btn">Book an Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Care Section -->
+  <section id="emergency" class="service-section">
+    <div class="container">
+      <div class="service-content reverse" style="flex-direction: row-reverse;">
+        <div class="service-img">
+          <img src="https://media.istockphoto.com/id/178382075/photo/hospital-surgery-corridor.jpg?s=612x612&w=0&k=20&c=MmEVxj-kHOqaRwTNUBrmq_Icv2VFxTpSA5G1UmbIyKs=" alt="Emergency Department">
+        </div>
+        <div class="service-text">
+          <h2>Emergency Care</h2>
+          <p>Our Emergency Department provides 24/7 emergency medical care for critical and life-threatening conditions. Our team of emergency medicine physicians, nurses, and support staff is trained to respond quickly and effectively to all types of emergencies.</p>
+          <div class="service-list">
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>24/7 emergency services</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Rapid response teams</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Advanced life support</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Trauma care</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Critical care</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Emergency surgery capabilities</span>
+            </div>
+          </div>
+          <div style="margin-top: 20px;">
+            <p><strong>For emergencies, please call: (123) 456-7890</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Services Section -->
+  <section class="section" style="background-color: var(--light-bg);">
+    <div class="container">
+      <h2 class="section-title">Additional Services</h2>
+      <div class="features-container">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          <h3 class="feature-title">Pharmacy</h3>
+          <p>Our in-house pharmacy provides convenient access to medications with expert pharmacist consultation.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-hand-holding-medical"></i>
+          </div>
+          <h3 class="feature-title">Rehabilitation</h3>
+          <p>Comprehensive rehabilitation services including physical, occupational, and speech therapy.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <h3 class="feature-title">Primary Care</h3>
+          <p>Comprehensive primary care services for patients of all ages, focused on prevention and wellness.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-tooth"></i>
+          </div>
+          <h3 class="feature-title">Dental Care</h3>
+          <p>General and specialized dental services for optimal oral health and beautiful smiles.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3 class="feature-title">Ophthalmology</h3>
+          <p>Comprehensive eye care services from routine exams to specialized treatments and surgeries.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-lungs"></i>
+          </div>
+          <h3 class="feature-title">Pulmonology</h3>
+          <p>Expert care for respiratory conditions and lung diseases with advanced diagnostic capabilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div style="background-color: var(--primary-color); padding: 60px; border-radius: var(--border-radius); text-align: center; color: #fff;">
+        <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Need More Information?</h2>
+        <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem;">If you have questions about our services or would like to schedule an appointment, our friendly staff is here to help. Contact us today for more information.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn" style="background-color: #fff; color: var(--primary-color);">Contact Us</a>
+          <a href="contact.html#appointment" class="btn btn-outline" style="border-color: #fff; color: #fff;">Book an Appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col footer-about">
+          <h3>St Andrews Hospital</h3>
+          <p>A premier healthcare institution dedicated to providing exceptional medical care with compassion and innovation.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="#cardiology">Cardiology</a></li>
+            <li><a href="#neurology">Neurology</a></li>
+            <li><a href="#surgery">Surgery</a></li>
+            <li><a href="#pediatrics">Pediatrics</a></li>
+            <li><a href="#emergency">Emergency Care</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Working Hours</h3>
+          <ul class="footer-links">
+            <li><i class="far fa-clock"></i> Emergency: 24/7</li>
+            <li><i class="far fa-clock"></i> Outpatient: Mon-Fri 8:00 AM - 6:00 PM</li>
+            <li><i class="far fa-clock"></i> Weekend: Sat 9:00 AM - 1:00 PM</li>
+            <li><i class="far fa-clock"></i> Holidays: Emergency Only</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2023 St Andrews Hospital. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - St Andrews Hospital</title>
+  <meta name="description" content="Get in touch with St Andrews Hospital. Contact us for appointments, inquiries, or emergencies. We're here to assist you with all your healthcare needs.">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="src/styles.css">
+
+  <style>
+    /* Additional Styles for Contact Page */
+    .map-container {
+      height: 400px;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+      margin: 40px 0;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .appointment-form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+    }
+
+    .appointment-form h3 {
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .form-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-col {
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      .form-row {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <h1><i class="fas fa-hospital"></i> ST ANDREWS</h1>
+          </a>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+          </ul>
+          <a href="#appointment" class="btn">Make an Appointment</a>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section page-header" style="background-image: url('https://images.stockcake.com/public/0/b/3/0b359db4-b05e-4dee-a971-4504891de96e_large/modern-hospital-exterior-stockcake.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Contact Us</h1>
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Contact</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information Section -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>Have questions or need assistance? We're here to help. Reach out to us using the contact information below or fill out the form, and a member of our team will get back to you as soon as possible.</p>
+      </div>
+
+      <div class="contact-container" style="margin-top: 40px;">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Our Location</h4>
+              <p>123 Medical Center Drive, Healthcare City, HC 12345</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Phone Numbers</h4>
+              <p>Emergency: (123) 456-7890</p>
+              <p>Appointments: (123) 456-7891</p>
+              <p>General Inquiries: (123) 456-7892</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email Addresses</h4>
+              <p>General Inquiries: info@standrewshospital.com</p>
+              <p>Appointments: appointments@standrewshospital.com</p>
+              <p>Patient Support: support@standrewshospital.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Working Hours</h4>
+              <p>Emergency Department: 24/7, 365 days a year</p>
+              <p>Outpatient Services: Monday to Friday, 8:00 AM - 6:00 PM</p>
+              <p>Weekend Outpatient: Saturday, 9:00 AM - 1:00 PM</p>
+              <p>Administrative Offices: Monday to Friday, 9:00 AM - 5:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+              <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
+            </div>
+
+            <div class="form-group">
+              <select class="form-control" id="department" required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="General">General Inquiry</option>
+                <option value="Appointments">Appointments</option>
+                <option value="Billing">Billing & Insurance</option>
+                <option value="Medical Records">Medical Records</option>
+                <option value="Feedback">Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section" style="background-color: var(--light-bg);">
+    <div class="container">
+      <h2 class="section-title">Find Us</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343033!2d-74.00425872426903!3d40.74076097132665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1676538202018!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h3>Directions</h3>
+        <p>St Andrews Hospital is conveniently located in the heart of Healthcare City, easily accessible by public transportation and with ample parking facilities for visitors and patients.</p>
+        <div style="margin-top: 30px;">
+          <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div style="flex: 1; min-width: 200px; max-width: 300px;">
+              <h4><i class="fas fa-car" style="color: var(--primary-color);"></i> By Car</h4>
+              <p>From Downtown: Take Main Street north, turn right onto Medical Center Drive. The hospital will be on your left.</p>
+            </div>
+            <div style="flex: 1; min-width: 200px; max-width: 300px;">
+              <h4><i class="fas fa-bus" style="color: var(--primary-color);"></i> Public Transit</h4>
+              <p>Bus routes 15, 22, and 37 stop directly in front of the hospital. The nearest subway station is Health Center Station (Blue Line).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Section -->
+  <section id="appointment" class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 class="section-title">Book an Appointment</h2>
+        <p>Schedule an appointment with one of our specialists. Please fill out the form below, and our appointment coordinator will contact you to confirm your appointment.</p>
+      </div>
+
+      <div class="appointment-form">
+        <form id="appointmentForm">
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-group">
+                <label for="firstName">First Name*</label>
+                <input type="text" class="form-control" id="firstName" required>
+              </div>
+            </div>
+            <div class="form-col">
+              <div class="form-group">
+                <label for="lastName">Last Name*</label>
+                <input type="text" class="form-control" id="lastName" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-group">
+                <label for="appointmentEmail">Email Address*</label>
+                <input type="email" class="form-control" id="appointmentEmail" required>
+              </div>
+            </div>
+            <div class="form-col">
+              <div class="form-group">
+                <label for="appointmentPhone">Phone Number*</label>
+                <input type="tel" class="form-control" id="appointmentPhone" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-group">
+                <label for="appointmentDepartment">Department/Specialty*</label>
+                <select class="form-control" id="appointmentDepartment" required>
+                  <option value="" disabled selected>Select Department</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Neurology">Neurology</option>
+                  <option value="Orthopedics">Orthopedics</option>
+                  <option value="Pediatrics">Pediatrics</option>
+                  <option value="Dermatology">Dermatology</option>
+                  <option value="General Medicine">General Medicine</option>
+                  <option value="Obstetrics & Gynecology">Obstetrics & Gynecology</option>
+                  <option value="Ophthalmology">Ophthalmology</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-col">
+              <div class="form-group">
+                <label for="preferredDoctor">Preferred Doctor (Optional)</label>
+                <input type="text" class="form-control" id="preferredDoctor">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date*</label>
+                <input type="date" class="form-control" id="preferredDate" required>
+              </div>
+            </div>
+            <div class="form-col">
+              <div class="form-group">
+                <label for="preferredTime">Preferred Time*</label>
+                <select class="form-control" id="preferredTime" required>
+                  <option value="" disabled selected>Select Time</option>
+                  <option value="Morning">Morning (8:00 AM - 12:00 PM)</option>
+                  <option value="Afternoon">Afternoon (1:00 PM - 5:00 PM)</option>
+                  <option value="Evening">Evening (After 5:00 PM)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Reason for Appointment*</label>
+            <textarea class="form-control" id="reason" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="insurance">Insurance Information (if applicable)</label>
+            <input type="text" class="form-control" id="insurance">
+          </div>
+
+          <div class="form-group">
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+              <input type="checkbox" id="newPatient" style="margin-right: 10px; margin-top: 5px;">
+              <label for="newPatient">I am a new patient at St Andrews Hospital.</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn" style="padding: 15px 30px;">Request Appointment</button>
+          </div>
+
+          <p style="margin-top: 20px; font-style: italic;">* Required fields</p>
+          <p style="margin-top: 10px; font-style: italic;">Note: This form is for appointment requests only. For medical emergencies, please call our emergency number at (123) 456-7890 or visit our Emergency Department.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="section" style="background-color: var(--light-bg);">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="accordion" style="margin-top: 30px;">
+          <div class="accordion-item" style="margin-bottom: 15px; background-color: #fff; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow);">
+            <div class="accordion-header" style="padding: 15px 20px; background-color: var(--primary-color); color: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0; font-size: 1.1rem;">What are your visiting hours?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content" style="padding: 15px 20px; display: none;">
+              <p>General visiting hours are from 10:00 AM to 8:00 PM daily. Specialized departments such as ICU, Pediatrics, and Maternity may have different visiting policies. Please check with the specific department or call our information desk at (123) 456-7892 for more details.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="margin-bottom: 15px; background-color: #fff; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow);">
+            <div class="accordion-header" style="padding: 15px 20px; background-color: var(--primary-color); color: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0; font-size: 1.1rem;">How do I schedule an appointment?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content" style="padding: 15px 20px; display: none;">
+              <p>You can schedule an appointment by:</p>
+              <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Calling our appointment line at (123) 456-7891</li>
+                <li>Filling out the appointment request form on this page</li>
+                <li>Emailing us at appointments@standrewshospital.com</li>
+                <li>Visiting our reception desk in person during business hours</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="margin-bottom: 15px; background-color: #fff; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow);">
+            <div class="accordion-header" style="padding: 15px 20px; background-color: var(--primary-color); color: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0; font-size: 1.1rem;">What insurance plans do you accept?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content" style="padding: 15px 20px; display: none;">
+              <p>We accept most major insurance plans, including but not limited to BlueCross BlueShield, Aetna, Cigna, UnitedHealthcare, Medicare, and Medicaid. For specific questions about your insurance coverage, please contact our billing department at (123) 456-7893 or email billing@standrewshospital.com.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="margin-bottom: 15px; background-color: #fff; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow);">
+            <div class="accordion-header" style="padding: 15px 20px; background-color: var(--primary-color); color: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0; font-size: 1.1rem;">How can I access my medical records?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content" style="padding: 15px 20px; display: none;">
+              <p>You can access your medical records through our patient portal at portal.standrewshospital.com. If you haven't registered for the portal yet, please bring a valid ID to our Medical Records department during business hours, or call (123) 456-7894 for assistance. You can also submit a request in writing to records@standrewshospital.com.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="margin-bottom: 15px; background-color: #fff; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow);">
+            <div class="accordion-header" style="padding: 15px 20px; background-color: var(--primary-color); color: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0; font-size: 1.1rem;">What should I bring to my first appointment?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content" style="padding: 15px 20px; display: none;">
+              <p>For your first appointment, please bring:</p>
+              <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Valid photo ID</li>
+                <li>Insurance card</li>
+                <li>List of current medications</li>
+                <li>Medical history information</li>
+                <li>Referral from your primary care physician (if required)</li>
+                <li>Any relevant medical records or test results</li>
+                <li>Payment method for copays or deductibles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col footer-about">
+          <h3>St Andrews Hospital</h3>
+          <p>A premier healthcare institution dedicated to providing exceptional medical care with compassion and innovation.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#cardiology">Cardiology</a></li>
+            <li><a href="services.html#neurology">Neurology</a></li>
+            <li><a href="services.html#surgery">Surgery</a></li>
+            <li><a href="services.html#pediatrics">Pediatrics</a></li>
+            <li><a href="services.html#emergency">Emergency Care</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Working Hours</h3>
+          <ul class="footer-links">
+            <li><i class="far fa-clock"></i> Emergency: 24/7</li>
+            <li><i class="far fa-clock"></i> Outpatient: Mon-Fri 8:00 AM - 6:00 PM</li>
+            <li><i class="far fa-clock"></i> Weekend: Sat 9:00 AM - 1:00 PM</li>
+            <li><i class="far fa-clock"></i> Holidays: Emergency Only</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2023 St Andrews Hospital. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Custom JS -->
+  <script src="src/main.js"></script>
+
+  <script>
+    // Form Submissions
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      const appointmentForm = document.getElementById('appointmentForm');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your message. We will get back to you shortly.');
+          contactForm.reset();
+        });
+      }
+
+      if (appointmentForm) {
+        appointmentForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your appointment request. Our appointment coordinator will contact you within 24 hours to confirm your appointment.');
+          appointmentForm.reset();
+        });
+      }
+
+      // Accordion
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+          const content = this.nextElementSibling;
+          const icon = this.querySelector('i');
+
+          if (content.style.display === 'block') {
+            content.style.display = 'none';
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down');
+          } else {
+            content.style.display = 'block';
+            icon.classList.remove('fa-chevron-down');
+            icon.classList.add('fa-chevron-up');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
